@@ -14,4 +14,6 @@
 //     randomAppointments.push(freeAppointments[i])
 // }
 
+
+// hardcoded random appointments
 export const randomAppointments = ["Fri_29_1400", "Thu_28_900", "Tue_02_1000", "Tue_02_1130", "Mon_01_1300", "Tue_02_1330", "Tue_02_1300", "Wed_03_1330", "Fri_29_1500", "Thu_28_1130", "Fri_29_1830", "Fri_29_1800", "Mon_01_1400", "Thu_28_1200", "Wed_03_1830"]

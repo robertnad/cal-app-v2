@@ -1,6 +1,6 @@
 import moment from 'moment';
 
-/* List next 7 days starting from tomorrow */
+// List next 7 days starting from tomorrow
 export let visibleDays = [];
 
 const firstVisibleDay = moment().day();

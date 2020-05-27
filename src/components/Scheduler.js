@@ -6,14 +6,8 @@ import { dayDataArr } from '../utils/dayHandler';
 
 const Scheduler = () => {
 
+    // holds dates of user appointments - restricts user to 1 appointment a day and 2 per week
     let limitHelperArr = [];
-
-    // useEffect(() => {
-    //     const userLimit = JSON.parse(localStorage.getItem('limitArray'));
-    //     if (userLimit) {
-    //         limitHelperArr = userLimit;
-    //     }
-    // }, []);
 
     return (
         <div>

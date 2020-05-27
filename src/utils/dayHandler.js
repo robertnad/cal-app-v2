@@ -41,8 +41,6 @@ export let dayDataArr = [];
 for(let i=0; i<dateTimeFormat.length; i++){
     dayDataArr[i] = {
         id: dateTimeFormat[i],
-        // dateInt: parseInt(dateTimeFormat[i].substring(4, 6)),
-        // timeInt: parseInt(dateTimeFormat[i].slice(7)),
         isPause: getPauseTime(dateTimeFormat, i),
         isClosed: getClosedTimes(dateTimeFormat, i),
         isTaken: randomAppointments.includes(dateTimeFormat[i]),
