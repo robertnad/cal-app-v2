@@ -1,0 +1,116 @@
+$blue:    #0fbcf9;
+$navy:    #445668;
+$green:   #20f592;
+$red:     #ef5777;
+$orange:  #ffd32a;
+
+.blue   { background: $blue }
+.navy   { background: $navy }
+.green  { background: $green }
+.red    { background: $red }
+.orange { background: $orange }
+
+
+h1 {
+	text-align: center;
+	font-size: 2em;
+	font-family: helvetica, 'Arial Narrow Bold', sans-serif;
+}
+
+body {
+	font-family: monospace;
+	color: #333;
+	margin: 20px;
+    padding: 20px;
+    border: 2px solid black;
+    border-radius: 20px;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 7fr;
+    // grid-template-areas: column-hours columns-days;
+}
+
+.columns-dates {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.column-hours {
+    grid-template-columns: repeat(1, 1fr);
+}
+
+.columns-appointments {
+    grid-template-columns: repeat(7, 1fr);
+}
+
+.blank {
+    background: white;
+    margin: 3px;
+    padding: 10px;
+	border-radius: 5px;
+}
+
+.item-static {
+	margin: 3px;
+	padding: 10px;
+	background: #d6d6d6;
+	text-align: center;
+	font-size: 1.5em;
+	border-radius: 5px;
+    border: 2px solid black;
+}
+
+.btn {
+	margin: 3px;
+	background: #d5e5f7;
+	border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.btn:hover {
+    background-color: #a5e0be;
+    border-radius: 10px;
+}
+.btn--clicked {
+    margin: 3px;
+	background: #d2dae2;
+    background-color: $green;
+	border-radius: 5px;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.btn--clicked:hover {
+    background-color: #5ed38f;
+    border-radius: 10px;
+}
+.btn--pause {
+    margin: 3px;
+	background: #d2dae2;
+    background-color: $orange;
+	border-radius: 5px;
+    border: 2px solid black;
+}
+
+.btn--closed {
+    margin: 3px;
+	background: #d2dae2;
+    background-color: $red;
+	border-radius: 5px;
+    border: 2px solid black;
+}
+
+
+// .btn:disabled {
+//     background-color: $red;
+//     cursor: not-allowed;
+// }
+
+
+.btn--taken {
+    margin: 3px;
+	background: #d2dae2;
+    background-color: $blue;
+    border-radius: 5px;
+    border: 2px solid black;
+}
